@@ -1,0 +1,34 @@
+.background {
+    -fx-background-color: #5199ff;
+    -fx-font-size: 16px;
+}
+.navbar {
+    -fx-background-color: #242240;
+    -fx-text-inner-color: white;
+    -fx-width: 100%;
+}
+.lbl {
+    -fx-start-margin: 10px;
+}
+.inarr {
+    -fx-background-color: #76fec5;
+    -fx-min-width: 150px;
+    -fx-max-width: 150px;
+}
+.content {
+    -fx-width: 75%;
+    -fx-alignment: center;
+}
+
+.btn, .btn-menu {
+    -fx-font-size: 12px;
+    -fx-background-color: inherit;
+    -fx-text-fill: white;
+}
+
+.btn:hover, .btn-menu:hover {
+    -fx-background-color: rgba(0.5,0.5,0.5,0.4);
+}
+.footer {
+    -fx-background-color: #242240;
+}
