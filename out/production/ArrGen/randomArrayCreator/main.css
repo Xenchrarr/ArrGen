@@ -7,9 +7,6 @@
     -fx-text-inner-color: white;
     -fx-width: 100%;
 }
-.lbl {
-    -fx-start-margin: 10px;
-}
 .inarr {
     -fx-background-color: #76fec5;
     -fx-min-width: 150px;

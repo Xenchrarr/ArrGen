@@ -3,6 +3,8 @@ package randomArrayCreator;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 
+import java.util.concurrent.TimeUnit;
+
 class RenderArray {
     private final int arrayL;
     private final GridPane array;
@@ -17,8 +19,8 @@ class RenderArray {
     }
 
     void PrintArray() {
-        int rows = genArray.length/10;
-        int cols = genArray.length/10;
+        int rows = (this.arrayL % 10 == 0) ? this.arrayL/10 : this.arrayL/10 + 1;
+        int cols = (this.arrayL % 10 == 0) ? this.arrayL/10 : this.arrayL/10 + 1;
         int index = 0;
         arrayGen();
         this.array.getChildren().clear();
@@ -33,7 +35,7 @@ class RenderArray {
     }
 
     private void arrayGen() {
-        int hold = 0;
+        int hold;
         int index = 0;
         int row_inA = 0;
         int col_inA = 0;
@@ -43,7 +45,6 @@ class RenderArray {
             if (!checkArray(hold, index)) {
                 genArray[index] = hold;
                 index++;
-                continue;
             } else {
                 if (row_inA == 5) {
                     col_inA++;
@@ -66,5 +67,26 @@ class RenderArray {
             index++;
         }
         return false;
+    }
+
+    private void max() {
+        int hold = this.genArray[0];
+        for (int i = 1; i < this.genArray.length; i++) {
+            if (this.genArray[i] > hold) {
+                hold = this.genArray[i];
+            }
+        }
+        Label maxLabel = new Label();
+
+    }
+
+    private void min() {
+        int hold = this.genArray[0];
+        for (int i = 1; i < this.genArray.length; i++) {
+            if (this.genArray[i] < hold) {
+                hold = this.genArray[i];
+            }
+        }
+        Label minLabel = new Label();
     }
 }
