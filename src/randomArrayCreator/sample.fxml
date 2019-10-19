@@ -1,8 +1,36 @@
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="randomArrayCreator.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import java.net.URL?>
+<BorderPane styleClass="background" fx:controller="randomArrayCreator.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+        <top>
+            <HBox styleClass="navbar" BorderPane.alignment="CENTER_LEFT" fx:id="top">
+                <Button styleClass="btn-menu" fx:id="btnExport">Export</Button>
+                <Button onAction="#dialog" styleClass="btn-menu" fx:id="btnInfo">Info</Button>
+            </HBox>
+        </top>
+        <center>
+            <GridPane BorderPane.alignment="CENTER" fx:id="array">
+
+            </GridPane>
+        </center>
+        <right>
+            <GridPane styleClass="right" BorderPane.alignment="BASELINE_RIGHT" fx:id="right">
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="0">Items picked more than once</Label>
+                <GridPane styleClass="inarr" GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="inArray"/>
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="2" fx:id="min">Min: </Label>
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="3" fx:id="max">Max: </Label>
+            </GridPane>
+        </right>
+        <bottom>
+            <HBox styleClass="footer" BorderPane.alignment="BOTTOM_LEFT" fx:id="bottom">
+                <Button onAction="#arrayGen" styleClass="btn" fx:id="btnGen">Generate array</Button>
+            </HBox>
+        </bottom>
+    <stylesheets>
+        <URL value="@main.css" />
+    </stylesheets>
+</BorderPane>

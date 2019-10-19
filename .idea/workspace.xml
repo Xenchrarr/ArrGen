@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Started working on the GeneralUtility class, haven't made anything of note there yet. &#10;&#10;RenderArray:&#10; - Updated the rows and cols setting in PrintArray()&#10; - Added min and max methods&#10; &#10;Main:&#10; - Going to refactor and cleanup. Will create everything within the fxml-file rather than inside the Start method.">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/GeneralUti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/GeneralUti.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/RenderArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/RenderArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomArrayCreator/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomArrayCreator/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/randomArrayCreator/GeneralUti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomArrayCreator/GeneralUti.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/randomArrayCreator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomArrayCreator/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/randomArrayCreator/RenderArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomArrayCreator/RenderArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/randomArrayCreator/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomArrayCreator/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randomArrayCreator/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomArrayCreator/sample.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,6 +209,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1571312083266" duration="10372000" />
       <workItem from="1571378424110" duration="3425000" />
+      <workItem from="1571386617679" duration="6167000" />
     </task>
     <servers />
   </component>
@@ -218,7 +221,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

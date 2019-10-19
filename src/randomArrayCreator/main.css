@@ -4,11 +4,12 @@
 }
 .navbar {
     -fx-background-color: #242240;
-    -fx-text-inner-color: white;
     -fx-width: 100%;
 }
-.inarr {
+.right {
     -fx-background-color: #76fec5;
+}
+.inarr {
     -fx-min-width: 150px;
     -fx-max-width: 150px;
 }
@@ -16,7 +17,11 @@
     -fx-width: 75%;
     -fx-alignment: center;
 }
-
+.btn-menu {
+    -fx-border-style: solid;
+    -fx-border-color: white;
+    -fx-border-radius: 2px;
+}
 .btn, .btn-menu {
     -fx-font-size: 12px;
     -fx-background-color: inherit;

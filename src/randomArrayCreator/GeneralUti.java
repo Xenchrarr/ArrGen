@@ -4,6 +4,7 @@ import javafx.scene.control.Alert;
 
 class GeneralUti {
     private final Alert diag;
+
     GeneralUti(Alert diag) {
         this.diag = diag;
     }
@@ -12,11 +13,6 @@ class GeneralUti {
         diag.setTitle("alert title");
         diag.setHeaderText("Lots of headers");
         diag.setContentText("Lorem ipsum dolor sit amet.");
-        try {
-            diag.wait();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
 }

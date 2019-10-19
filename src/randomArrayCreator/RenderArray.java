@@ -23,7 +23,9 @@ class RenderArray {
         int cols = (this.arrayL % 10 == 0) ? this.arrayL/10 : this.arrayL/10 + 1;
         int index = 0;
         arrayGen();
-        this.array.getChildren().clear();
+        if (this.array.getChildren() != null) {
+            this.array.getChildren().clear();
+        }
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
                 Label l = new Label();
@@ -39,7 +41,6 @@ class RenderArray {
         int index = 0;
         int row_inA = 0;
         int col_inA = 0;
-        this.inArray.getChildren().clear();
         while (index < genArray.length) {
             hold = (int) (Math.random() * 900 ) + 100;
             if (!checkArray(hold, index)) {
