@@ -11,8 +11,9 @@ class GeneralUti {
 
     void dialogInfo() {
         diag.setTitle("alert title");
-        diag.setHeaderText("Lots of headers");
-        diag.setContentText("Lorem ipsum dolor sit amet.");
+        diag.setHeaderText("Made by Tor Kristian Dahle");
+        diag.setContentText("This piece of software is GPLv3 compliant, please do follow the license.");
+        diag.show();
     }
 
 }

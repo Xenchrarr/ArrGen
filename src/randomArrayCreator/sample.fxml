@@ -6,28 +6,32 @@
 <?import java.net.URL?>
 <BorderPane styleClass="background" fx:controller="randomArrayCreator.Controller"
             xmlns:fx="http://javafx.com/fxml">
-        <top>
-            <HBox styleClass="navbar" BorderPane.alignment="CENTER_LEFT" fx:id="top">
-                <Button styleClass="btn-menu" fx:id="btnExport">Export</Button>
-                <Button onAction="#dialog" styleClass="btn-menu" fx:id="btnInfo">Info</Button>
-            </HBox>
-        </top>
         <center>
-            <GridPane BorderPane.alignment="CENTER" fx:id="array">
-
-            </GridPane>
+            <GridPane styleClass="array" hgap="10" vgap="10" BorderPane.alignment="CENTER" fx:id="array" />
         </center>
         <right>
-            <GridPane styleClass="right" BorderPane.alignment="BASELINE_RIGHT" fx:id="right">
-                <Label GridPane.columnIndex="0" GridPane.rowIndex="0">Items picked more than once</Label>
-                <GridPane styleClass="inarr" GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="inArray"/>
-                <Label GridPane.columnIndex="0" GridPane.rowIndex="2" fx:id="min">Min: </Label>
-                <Label GridPane.columnIndex="0" GridPane.rowIndex="3" fx:id="max">Max: </Label>
+            <GridPane styleClass="right" BorderPane.alignment="CENTER" fx:id="right">
+                <Label styleClass="lbl" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    Items picked more than once</Label>
+                <GridPane GridPane.rowIndex="1" GridPane.columnIndex="0" hgap="10" vgap="10" styleClass="inarr" fx:id="inArray"/>
+                <Label styleClass="lbl" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    Min:
+                </Label>
+                <Label styleClass="lbl" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="min"/>
+                <Label styleClass="lbl" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                    Max:
+                </Label>
+                <Label styleClass="lbl" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="max"/>
+                <Label styleClass="lbl" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                    Average:
+                </Label>
+                <Label styleClass="lbl" GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="average"/>
             </GridPane>
         </right>
         <bottom>
             <HBox styleClass="footer" BorderPane.alignment="BOTTOM_LEFT" fx:id="bottom">
-                <Button onAction="#arrayGen" styleClass="btn" fx:id="btnGen">Generate array</Button>
+                <Button onAction="#arrayPrint" styleClass="btn" fx:id="btnGen">Generate array</Button>
+                <Button onAction="#dialog" styleClass="btn" fx:id="btnInfo">Info</Button>
             </HBox>
         </bottom>
     <stylesheets>

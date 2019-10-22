@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Started working on the GeneralUtility class, haven't made anything of note there yet. &#10;&#10;RenderArray:&#10; - Updated the rows and cols setting in PrintArray()&#10; - Added min and max methods&#10; &#10;Main:&#10; - Going to refactor and cleanup. Will create everything within the fxml-file rather than inside the Start method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrGen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ArrGen.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/GeneralUti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/GeneralUti.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrGen/randomArrayCreator/Main.class" afterDir="false" />
@@ -95,6 +96,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -102,11 +104,17 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sample/sample.fxml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
@@ -210,6 +218,8 @@
       <workItem from="1571312083266" duration="10372000" />
       <workItem from="1571378424110" duration="3425000" />
       <workItem from="1571386617679" duration="6167000" />
+      <workItem from="1571477980464" duration="11584000" />
+      <workItem from="1571775199244" duration="445000" />
     </task>
     <servers />
   </component>
@@ -234,5 +244,18 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Started working on the GeneralUtility class, haven't made anything of note there yet. &#10;&#10;RenderArray:&#10; - Updated the rows and cols setting in PrintArray()&#10; - Added min and max methods&#10; &#10;Main:&#10; - Going to refactor and cleanup. Will create everything within the fxml-file rather than inside the Start method." />
     <option name="LAST_COMMIT_MESSAGE" value="Started working on the GeneralUtility class, haven't made anything of note there yet. &#10;&#10;RenderArray:&#10; - Updated the rows and cols setting in PrintArray()&#10; - Added min and max methods&#10; &#10;Main:&#10; - Going to refactor and cleanup. Will create everything within the fxml-file rather than inside the Start method." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ArrGen$Main.ic" NAME="Main Coverage Results" MODIFIED="1571485256143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>randomArrayCreator.*</FILTER>
+    </SUITE>
   </component>
 </project>

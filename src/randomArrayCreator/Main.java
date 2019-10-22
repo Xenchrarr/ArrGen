@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -14,6 +15,7 @@ public class Main extends Application {
         primaryStage.setTitle("Random number set generator");
         primaryStage.setScene(new Scene(root));
         primaryStage.setMaximized(true);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
@@ -21,49 +23,3 @@ public class Main extends Application {
         launch(args);
     }
 }
-
-/*
-        HBox top = new HBox();
-        HBox bottom = new HBox();
-        GridPane right = new GridPane();
-        GridPane array = new GridPane();
-        GridPane inArray = new GridPane();
-        Alert diag = new Alert(Alert.AlertType.INFORMATION);
-        Label inArrLbl = new Label();
-        RenderArray rnd = new RenderArray(100, array, inArray);
-        GeneralUti genutl = new GeneralUti(diag);
-        Button btn = new Button("Generate array");
-        Button btn1 = new Button("Export");
-        Button btn2 = new Button("Info");
-        inArrLbl.setText("Picked > 1:");
-        inArrLbl.setLabelFor(inArray);
-        top.getChildren().addAll(btn1, btn2);
-        bottom.getChildren().addAll(btn);
-        top.setPadding(new Insets(10,10,10,10));
-        bottom.setPadding(new Insets(10,10,10,10));
-        array.setPadding(new Insets(10,10,10,10));
-        inArray.setPadding(new Insets(10,10,10,10));
-        inArrLbl.setPadding(new Insets(10,10,10,10));
-        inArray.setHgap(10);
-        inArray.setVgap(10);
-        array.setVgap(10);
-        array.setHgap(10);
-        btn.setOnAction( e -> rnd.PrintArray());
-        btn1.setOnAction( e -> genutl.dialogInfo());
-        BorderPane bp = new BorderPane();
-        bp.setTop(top);
-        bp.setCenter(array);
-        bp.setBottom(bottom);
-        right.add(inArrLbl, 0, 0);
-        right.add(inArray, 0,1);
-        bp.setRight(right);
-        bp.getStyleClass().add("background");
-        top.getStyleClass().add("navbar");
-        bottom.getStyleClass().add("footer");
-        right.getStyleClass().add("inarr");
-        array.getStyleClass().add("content");
-        inArrLbl.getStyleClass().add("lbl");
-        btn.getStyleClass().add("btn");
-        btn1.getStyleClass().add("btn-menu");
-        btn2.getStyleClass().add("btn-menu");
- */
