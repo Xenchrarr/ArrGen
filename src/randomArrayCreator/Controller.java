@@ -26,7 +26,6 @@ public class Controller implements Initializable {
     private Label max;
 
     private Alert alert;
-    private RenderArray rnd;
     private GeneralUti gnu;
     private int[] arr;
 
@@ -61,7 +60,6 @@ public class Controller implements Initializable {
         this.inArray.gridLinesVisibleProperty();
         while (index < this.arr.length) {
             hold = (int) (Math.random() * 900) + 100;
-            System.out.println(hold);
             if (!checkArray(hold, index)) {
                 arr[index] = hold;
                 index++;
@@ -125,7 +123,5 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        System.out.println(this.array);
-        System.out.println(this.inArray);
     }
 }
